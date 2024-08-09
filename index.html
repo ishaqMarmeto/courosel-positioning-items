@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Splide Carousel</title>
+
+  <!-- Include Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"> <!-- Your custom CSS file -->
+</head>
+<body>
+
+  <!-- Dropdown for selecting content position -->
+  <div id="position-selector">
+    <label for="position">Select Position:</label>
+    <select id="position">
+      <option value="position-top-start">Top Start</option>
+      <option value="position-top-center">Top Center</option>
+      <option value="position-top-end">Top End</option>
+      <option value="position-middle-start">Middle Start</option>
+      <option value="position-middle-center">Middle Center</option>
+      <option value="position-middle-end">Middle End</option>
+      <option value="position-bottom-start">Bottom Start</option>
+      <option value="position-bottom-center">Bottom Center</option>
+      <option value="position-bottom-end">Bottom End</option>
+    </select>
+  </div>
+
+  <!-- Splide Carousel Structure -->
+  <div id="splide" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- Slides will be injected here by JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Include Splide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script> <!-- Your custom JS file -->
+</body>
+</html>
