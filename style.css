@@ -1,171 +1,157 @@
+
 /* Basic Carousel Styling */
+#splide{
+  height: 100vh;
+}
 .splide__slide {
-  position: relative; /* Ensure the position is relative for child elements */
-  
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px; /* Set a height for the slide */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  text-align: center;
 }
 
-.splide__slide img {
-  width: 100%;
-  height: auto;
-  display: block; /* Ensure the image fits its container */
-  border-radius: 25px;
+@media (max-width: 450px)  {
+  .splide__slide{
+    min-height: 100vh;
+  }
+  
+  
 }
 
 /* Basic Styling for Carousel Content */
 .carousel-content {
-  margin-left: 10px;
-  margin-right: 10px;
-  gap: 20px;
-  
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   color: white;
- 
-  border-radius: 5px; /* Optional: Rounded corners for the content */
-  max-width: 80%; 
+  border-radius: 5px;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px;
 }
-
-
-.carousel-content>h2{
-  background-color: transparent;
-  backdrop-filter: blur(8px);
-  padding: 10px;
+.carousel-content ul{
+  list-style-position: inside;
+  list-style-type:disc;
+  padding: 4px 4px;
   border: 1px solid white;
-  display: inline-block;
+  max-width: fit-content;
   border-radius: 25px;
+  backdrop-filter: blur(8px);
+  background-color: transparent;
+}
+
+
+.carousel-content > h1 {
   margin: 0px;
-  max-height: 30px;
 }
-.carousel-content>h1{
- margin: 0px;
-}
-.carousel-content>button{
+
+.carousel-content > button {
   background-color: white;
   border: 1px solid rgb(15, 15, 15);
-  text-decoration: none;
-  
   border-radius: 25px;
   padding: 10px;
-  
+  max-width: fit-content;
+  align-self: center !important;
 }
 
-.carousel-content>button>a{
-  
+.carousel-content > button > a {
   text-decoration: none;
   color: black;
-  
- 
 }
 
-/* #position{
-  border-radius: 10px;
-  padding: 5px;
-  margin: 0px;
-} */
-
-select{
+/* Dropdown Styling */
+select {
   background-color: rgb(184, 112, 133);
   border-radius: 10px;
   padding: 5px;
   margin: 0px;
   color: white;
-} 
-
-
-select>option:hover{
-  
-  border-radius: 8px;
-  background-color: rgb(212, 45, 92);
- 
 }
 
-#position-selector{
+select > option:hover {
+  border-radius: 8px;
+  background-color: rgb(212, 45, 92);
+}
+
+#position-selector {
   padding: 10px;
   background-color: white;
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-
- 
 }
-#position-selector>label{
+
+#position-selector > label {
   color: black;
   margin-right: 10px;
   font-weight: bold;
 }
-/* Positioning Classes */
+
+/* Flexbox Positioning Classes with Random Text Alignment */
 .position-top-start {
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
-  text-align: left;
-  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+ 
 }
 
 .position-top-center {
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
 }
 
 .position-top-end {
-  top: 0;
-  right: 0;
-  transform: translate(0, 0);
-  text-align: right;
-  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
 }
 
 .position-middle-start {
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+  align-items: center;
+  justify-content: flex-start;
   text-align: left;
 }
 
 .position-middle-center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .position-middle-end {
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-  text-align: right;
-}
-
-.position-bottom-start {
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0);
+  align-items: center;
+  justify-content: flex-end;
   text-align: left;
 }
 
+.position-bottom-start {
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+}
+
 .position-bottom-center {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  align-items: flex-end;
+  justify-content: center;
   text-align: center;
 }
 
 .position-bottom-end {
-  bottom: 0;
-  right: 0;
-  transform: translate(0, 0);
-  text-align: right;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: left;
 }
-
-
 
 /* Responsive Adjustments (Optional) */
 @media (max-width: 768px) {
   .carousel-content {
-    font-size: 8px; /* Adjust font size for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
 }
