@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "background_url": "https://veena-theme-fashion.myshopify.com/cdn/shop/files/4.png?v=1705665890&width=3840",
           "alt_text": "Image of Product 2",
           "product_url": "https://veena-theme-fashion.myshopify.com/collections",  // Replace with actual product URL if available
-          "position_class": "position-middle-start"
+          "position_class": "position-middle-center"
         },
         {
           "title": "Modern Elegance",
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "background_url": "https://veena-theme-fashion.myshopify.com/cdn/shop/files/3.png?v=1705665898&width=3840",
           "alt_text": "Image of Product 3",
           "product_url": "https://veena-theme-fashion.myshopify.com/collections",  // Replace with actual product URL if available
-          "position_class": "position-middle-end"
+          "position_class": "position-middle-center"
         }
       ]
     }
