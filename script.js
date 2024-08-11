@@ -20,10 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "button_text": "Explore More",
           "background_url": "https://veena-theme-fashion.myshopify.com/cdn/shop/files/1.png?v=1705665890&width=3840",
           "alt_text": "Image of Product 1",
-<<<<<<< HEAD
           "product_url": "https://veena-theme-fashion.myshopify.com/collections",  // Replace with actual product URL if available
-=======
->>>>>>> e97c58a5fe11affd3a73245a0e3d417e58711244
           "position_class": "position-middle-center"
         },
         {
@@ -32,11 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "button_text": "Shop Now",
           "background_url": "https://veena-theme-fashion.myshopify.com/cdn/shop/files/4.png?v=1705665890&width=3840",
           "alt_text": "Image of Product 2",
-<<<<<<< HEAD
           "product_url": "https://veena-theme-fashion.myshopify.com/collections",  // Replace with actual product URL if available
-=======
-         
->>>>>>> e97c58a5fe11affd3a73245a0e3d417e58711244
           "position_class": "position-middle-start"
         },
         {
@@ -45,10 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "button_text": "Explore More",
           "background_url": "https://veena-theme-fashion.myshopify.com/cdn/shop/files/3.png?v=1705665898&width=3840",
           "alt_text": "Image of Product 3",
-<<<<<<< HEAD
           "product_url": "https://veena-theme-fashion.myshopify.com/collections",  // Replace with actual product URL if available
-=======
->>>>>>> e97c58a5fe11affd3a73245a0e3d417e58711244
           "position_class": "position-middle-end"
         }
       ]
